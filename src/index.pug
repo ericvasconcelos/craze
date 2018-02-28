@@ -1,16 +1,29 @@
 doctype html  
-html(lang="pt-BR")  
+html(lang='pt-BR')  
   head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="shortcut icon", type="image/x-icon", href="")
-    link(rel="stylesheet", href="./styles/main.css")
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut icon', type='image/x-icon', href='#')
+    link(rel='stylesheet', href='./styles/main.css')
     title Craze
-    meta(name="description", content="Single page of Craze, a great new free theme to showcase your new app.")
-    meta(name="author", content="Eric Vasconcelos")
+    meta(name='description', content='Single page of Craze, a great new free theme to showcase your new app.')
+    meta(name='author', content='Eric Vasconcelos')
   body
-    div.container
-      h1 Home
+    section#hero.hero
+      .container
+        .hero__left
+          h1.hero__title Craze
+          p.her__description A great new free psd theme to showcase your new app.
+          nav.hero__systems
+            a.hero__systems__link(href='#')
+              img(src='./images/apple-icon.svg')
+            a.hero__systems__link(href='#')
+              img(src='./images/android-icon.svg')
+            a.hero__systems__link(href='#')
+              img(src='./images/windows-icon.svg')
 
-    script(src="./scripts/main.min.js")
+        .hero__right
+          img.hero__hand(src='./images/hand.png')
+
+    script(src='./scripts/main.min.js')

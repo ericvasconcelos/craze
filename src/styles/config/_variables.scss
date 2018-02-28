@@ -46,16 +46,16 @@ $size-s-positive-gap: rem(20);
 $size-m-positive-gap: calc((100vw - #{$grid__size__m}) /2);
 
 // Fonts
-$heading: 'Intro';
-$heading-secondary: 'kc-headline';
-$font-regular:  'DINPro-Regular';
-$font-bold:  'DINPro-Bold';
+$heading: '';
+$regular: '';
 
 // Colors
 $white: #ffffff;
-$black: #110d0e;
-$red: #d54137;
-$redblack: #5c3c3f;
+$black: #222222;
+$gray: #848484;
+$light-gray: #e3e3e3;
+$blue: #3498db;
+$dark-blue: #0d74b9;
 
 // Forms
 $formPaddingVertical: 1.125rem;
