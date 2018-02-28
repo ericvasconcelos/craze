@@ -1,0 +1,51 @@
+.testimonials {
+  width: 100%;
+  padding: rem(55) 0;
+}
+
+.carousel {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.carousel__wrap {
+  margin: 0 auto rem(50); 
+}
+
+.carousel__box {
+  text-align: center;
+}
+
+.carousel__box__testimonial {
+  margin-bottom: rem(15);
+  color: $gray;
+  font-family: $font-regular;
+  font-style: italic;
+  font-size: rem(24);
+  line-height: 1.6;
+}
+
+.carousel__box__author {
+  margin-bottom: rem(15);
+  color: $black;
+  font-family: $font-subtitle;
+  font-size: rem(18);
+}
+
+.carousel__bullets {
+  display: block;
+  text-align: center;
+}
+
+.carousel__bullets__item {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 rem(3);
+  width: rem(16);
+  height: rem(16);
+  border: rem(2) solid $blue;
+
+  &.active {
+    background-color: $blue;
+  }
+}
