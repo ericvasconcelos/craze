@@ -1,0 +1,97 @@
+.plans {
+  width: 100%;
+  padding: rem(55) 0 0;
+  background-color: $light-gray;
+}
+
+.plans__title {
+  color: $black;
+  text-align: center;
+  font-family: $font-subtitle;
+  font-size: rem(30);
+}
+
+.plans__description {
+  margin: 0;
+  text-align: center;
+  color: $gray;
+  font-family: $font-regular;
+  font-size: rem(16);
+  line-height: 1.6;
+}
+
+.plans__list {
+  display: block;
+  position: relative;
+  bottom: rem(-60);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.plans__list__item {
+  width: 24.6%;
+  margin: 0 0.2%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $white;
+  text-align: center;
+}
+
+.plans__list__item__title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: rem(17) 0;
+  background-color: $blue;
+  font-family: $font-subtitle;
+  color: $white;
+  font-size: rem(26);
+  font-weight: 400;
+}
+
+.plans__list__item__price {
+  display: block;
+  margin: 0;
+  padding: rem(15) 0;
+  font-family: $font-price;
+  color: $black;
+  font-size: rem(62);
+  -webkit-font-smoothing: antialiased;
+
+  span {
+    position: relative;
+    display: inline-block;
+    font-size: rem(31);
+    top: rem(-16);
+  }
+}
+
+.plans__list__item__feature {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: rem(15) 0;
+  border-top: rem(1) solid $light-gray;
+  font-family: $font-regular;
+  color: $gray;
+  font-size: rem(16);
+}
+
+.plans__list__item__purchase {
+  display: block;
+  width: 100%;
+  padding: rem(20) 0;
+  background-color: $blue;
+}
+
+.plans__list__item__purchase__button {
+  display: inline-block;
+  padding: rem(15) rem(35);
+  background-color: $dark-blue;
+  font-family: $font-subtitle;
+  font-weight: bold;
+  font-size: rem(15);
+  text-transform: uppercase;
+  color: $white;
+}
