@@ -24,7 +24,7 @@ gulp.task('w', ['sass', 'html', 'scripts', 'imagemin'], () => {
   });
 
   gulp.watch(`${dirs.src}/*.pug`, ['html']).on('change', browserSync.reload);
-  gulp.watch(`${dirs.src}/styles/**/*.scss`, ['sass']);
+  gulp.watch(`${dirs.src}/styles/**/*.scss`, ['sass']).on('change', browserSync.reload);
   gulp.watch(`${dirs.src}/scripts/**/*.js`, ['scripts']);
   gulp.watch(`${dirs.dist}/scripts/bundle.js`).on('change', browserSync.reload);
   gulp.watch(`${dirs.src}/images/**/*.[png,jpg]`, ['imagemin']).on('change', browserSync.reload);
