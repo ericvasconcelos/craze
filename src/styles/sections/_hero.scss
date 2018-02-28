@@ -8,24 +8,29 @@
   display: block;
   float: left;
   width: 50%;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .hero__title {
   margin: 0 0 rem(55);
   padding-top: rem(145);
   color: $white;
-  font-size: rem(72);
   font-family: $heading;
+  font-size: rem(72);
+  font-weight: normal;
   text-shadow: 1px 1px 2px $black;
 }
 
-.her__description {
+.hero__description {
   margin-bottom: rem(25);
-  font-size: rem(27);
   color: $white;
+  font-family: $font-medium;
+  font-size: rem(24);
   text-shadow: 1px 1px 2px $black;
+  font-weight: 100;
+  letter-spacing: rem(0.4);
+  -webkit-font-smoothing: antialiased;
 }
 
 .hero__systems {
@@ -41,7 +46,7 @@
   border-radius: 50%;
   margin-right: rem(15);
   background-color: $black;
-  opacity: 0.6;
+  opacity: 0.5;
   @include transition(0.5s all ease-in-out);
 
   &:hover {
@@ -61,7 +66,7 @@
   float: left;
   width: 50%;
   height: 100%;
-  padding-right: 6%;
+  padding-right: 5%;
 }
 
 .hero__hand {

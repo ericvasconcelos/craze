@@ -46,8 +46,11 @@ $size-s-positive-gap: rem(20);
 $size-m-positive-gap: calc((100vw - #{$grid__size__m}) /2);
 
 // Fonts
-$heading: '';
-$regular: '';
+$heading: 'pacificoregular';
+$font-title: "Myriad Pro", Myriad, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-regular: 'helveticaneue_regular';
+$font-medium: 'helveticaneue_medium';
+$font-price: 'novecento_wide_bold';
 
 // Colors
 $white: #ffffff;
