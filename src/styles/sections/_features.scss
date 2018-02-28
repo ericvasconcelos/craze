@@ -1,0 +1,98 @@
+.features {
+  padding: rem(55) 0;
+}
+
+.features__title {
+  color: $black;
+  text-align: center;
+  font-family: $font-subtitle;
+  font-size: rem(30);
+}
+
+.features__description {
+  margin-bottom: rem(60);
+  text-align: center;
+  color: $gray;
+  font-family: $font-regular;
+  font-size: rem(16);
+  line-height: 1.6;
+}
+
+.features__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.features__list__item {
+  display: block;
+  float: left;
+  width: 33.333333%;
+  padding: 4%;
+  text-align: center;
+  position: relative;
+  
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: $light-gray;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    &:before {
+      width: 80%;
+      height: rem(1);
+      bottom: 0;
+      left: 10%;
+    }
+
+    &:after {
+      width: rem(1);
+      height: 80%;
+      top: 10%;
+      right: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    &:before {
+      width: 80%;
+      height: rem(1);
+      bottom: 0;
+      left: 10%;
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(5) {
+    &:after {
+      width: rem(1);
+      height: 80%;
+      top: 10%;
+      right: 0;
+    }
+  }
+}
+
+.features__list__item__icon {
+  display: block;
+  margin: 0 auto rem(15);
+}
+
+.features__list__item__title {
+  color: $black;
+  font-family: $font-subtitle;
+  font-size: rem(24);
+  margin-bottom: rem(15);
+}
+
+.features__list__item__description {
+  color: $gray;
+  font-family: $font-regular;
+  font-size: rem(16);
+  line-height: 1.6;
+  margin: 0;
+}
