@@ -3,7 +3,8 @@
 Single page of Craze, a great new free theme to showcase your new app.
 This application was created using by Pug, SASS, ECMAScript 6 and BrowserSync.
 
-All code was automated with Gulp.
+Everything was automated with Gulp, so all code is minified and compressed.
+Images can be injected inline, decreasing unnecessary requests.
 
 ## Getting Started
 
@@ -19,6 +20,8 @@ After install all npm packages, run the default task:
 ```
 gulp
 ```
+
+Go to the page `localhost:3000`
 
 ## Observations
 
