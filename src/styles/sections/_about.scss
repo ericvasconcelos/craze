@@ -5,31 +5,40 @@
 }
 
 .about__left {
-  float: left;
-  width: 55%;
-  padding-right: 10%;
-}
+  width: 100%;
 
-.about__title {
-  color: $black;
-  font-family: $font-subtitle;
-  font-size: rem(30);
+  @media #{$media__l} {
+    float: left;
+    width: 55%;
+    padding-right: 10%;
+  }
 }
 
 .about__description {
   margin-bottom: rem(15);
-  color: $gray;
-  font-family: $font-regular;
-  font-size: rem(16);
-  line-height: 1.6;
 }
 
 .about__list {
-  padding-left: rem(20);
+  padding-left: rem(0);
+  margin-bottom: rem(40);
+
+  @media #{$media__l} {
+    padding-left: rem(20);
+    margin-bottom: rem(0);
+  }
 }
 
 .about__list__item {
   margin-bottom: rem(15);
+  color: $gray;
+  font-family: $font-medium;
+  font-size: rem(14);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+
+  @media #{$media__l} {
+    font-size: rem(16);
+  }
 }
 
 .about__list__item__arrow {
@@ -37,7 +46,11 @@
   display: inline-block;
   width: rem(10);
   height: rem(10);
-  margin-right: rem(15);
+  margin-right: rem(7);
+
+  @media #{$media__l} {
+    margin-right: rem(15);
+  }
 
   &:before,
   &:after {
@@ -59,18 +72,13 @@
   }
 }
 
-.about__list__item__description {
-  display: inline-block;
-  margin: 0;
-  color: $gray;
-  font-family: $font-regular;
-  font-size: rem(16);
-  line-height: 1.6;
-}
-
 .about__right {
-  float: left;
-  width: 45%;
+  width: 100%;
+
+  @media #{$media__l} {
+    float: left;
+    width: 45%;
+  }
 }
 
 .about__video {
@@ -80,6 +88,8 @@
   overflow: hidden;
   max-width: 100%;
   height: auto;
+  border-radius: rem(10);
+  overflow: hidden;
 
   iframe {
     position: absolute;

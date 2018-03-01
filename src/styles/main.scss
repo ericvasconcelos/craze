@@ -33,4 +33,27 @@ body {
 	}
 }
 
+.section__title {
+  margin-top: 0;
+  color: $black;
+  font-family: $font-subtitle;
+  font-size: rem(24);
 
+  @media #{$media__l} {
+    font-size: rem(30);
+  }
+}
+
+.section__description {
+  color: $gray;
+  font-family: $font-medium;
+  font-weight: 100;
+  font-size: rem(14);
+  line-height: 1.6;
+  letter-spacing: rem(0.3);
+  -webkit-font-smoothing: antialiased;
+
+  @media #{$media__l} {
+    font-size: rem(16);
+  }
+}

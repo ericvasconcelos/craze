@@ -5,19 +5,12 @@
 
 .footer__contact__title {
   margin-bottom: rem(15);
-  color: $black;
   text-align: center;
-  font-family: $font-subtitle;
-  font-size: rem(30);
 }
 
 .footer__contact__description {
   margin: 0 0 rem(20);
   text-align: center;
-  color: $gray;
-  font-family: $font-regular;
-  font-size: rem(16);
-  line-height: 1.6;
 }
 
 .footer__contact__social {
@@ -33,7 +26,7 @@
   height: rem(32);
   padding: rem(8);
   border-radius: 50%;
-  margin: 0 rem(7);
+  margin: 0 rem(4);
   background-color: $light-gray;
   @include transition(0.5s all ease-in-out);
 
@@ -45,6 +38,10 @@
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  @media #{$media__m} {
+    margin: 0 rem(7);
   }
 }
 
@@ -61,10 +58,19 @@
 
 .footer__links__list__link {
   display: inline-block;
-  margin: 0 rem(20);
+  margin: 0 rem(12) rem(15);
   vertical-align: middle;
   color: $gray;
-  font-family: $font-regular;
-  font-size: rem(16);
+  font-family: $font-medium;
+  font-size: rem(14);
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+
+  @media #{$media__m} {
+    margin: 0 rem(20);
+  }
+
+  @media #{$media__l} {
+    font-size: rem(16);
+  }
 }

@@ -1,50 +1,79 @@
 .hero {
   width: 100%;
-  height: rem(600);
+  height: auto;
   background: url('../images/bg-hero.jpg') repeat 0 0 #3498db;
+
+  @media #{$media__l} {
+    height: rem(600);
+  }
 }
 
 .hero__left {
   display: block;
-  float: left;
-  width: 50%;
-  padding-left: 5%;
-  padding-right: 5%;
+  width: 100%;
+
+  @media #{$media__l} {
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .hero__title {
-  margin: 0 0 rem(55);
-  padding-top: rem(145);
+  margin: 0 0 rem(25);
+  padding-top: rem(40);
   color: $white;
+  font-size: rem(55);
+  text-align: center;
   font-family: $heading;
-  font-size: rem(72);
   font-weight: normal;
   text-shadow: 1px 1px 2px $black;
+
+  @media #{$media__l} {
+    text-align: left;
+    margin: 0 0 rem(55);
+    padding-top: rem(145);
+    font-size: rem(72);
+  }
 }
 
 .hero__description {
-  margin-bottom: rem(25);
+  margin-bottom: rem(15);
   color: $white;
   font-family: $font-medium;
-  font-size: rem(24);
+  font-size: rem(18);
+  text-align: center;
   text-shadow: 1px 1px 2px $black;
   font-weight: 100;
   letter-spacing: rem(0.4);
   -webkit-font-smoothing: antialiased;
+
+  @media #{$media__l} {
+    margin-bottom: rem(25);
+    font-size: rem(24);
+    text-align: left;
+  }
 }
 
 .hero__systems {
   display: block;
+  text-align: center;
+  margin-bottom: rem(25);
+
+  @media #{$media__l} {
+    text-align: left;
+  }
 }
 
 .hero__systems__link {
   display: inline-block;
   vertical-align: middle;
-  width: rem(55);
-  height: rem(55);
-  padding: rem(13);
+  width: rem(40);
+  height: rem(40);
+  padding: rem(10);
   border-radius: 50%;
-  margin-right: rem(15);
+  margin: 0 rem(8);
   background-color: $black;
   opacity: 0.5;
   @include transition(0.5s all ease-in-out);
@@ -58,20 +87,38 @@
     width: 100%;
     height: auto;
   }
+
+  @media #{$media__l} {
+    width: rem(55);
+    height: rem(55);
+    padding: rem(13);
+    margin: 0 rem(15) 0 0;
+  }
 }
 
 .hero__right {
   position: relative;
   display: block;
-  float: left;
-  width: 50%;
-  height: 100%;
-  padding-right: 5%;
+  width: 100%;
+
+  @media #{$media__l} {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-right: 5%;
+  }
 }
 
 .hero__hand {
   display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  width: 100%;
+  max-width: rem(300);
+  margin: 0 auto;
+
+  @media #{$media__l} {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: none;
+  }
 }

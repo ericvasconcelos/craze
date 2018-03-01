@@ -28,8 +28,8 @@ html(lang='pt-BR')
     
     section#features.features
       .container
-        h2.features__title Craze Features
-        p.features__description Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.
+        h2.features__title.section__title Craze Features
+        p.features__description.section__description Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.
 
         ul.features__list
           li.features__list__item
@@ -65,18 +65,18 @@ html(lang='pt-BR')
     section#about.about
       .container
         .about__left
-          h2.about__title Whats Craze all About?
-          p.about__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris.
-          p.about__description Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+          h2.about__title.section__title Whats Craze all About?
+          p.about__description.section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris.
+          p.about__description.section__description Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
 
           ul.about__list
             li.about__list__item
               span.about__list__item__arrow
-              p.about__list__item__description Lorem ipsum dolor sit amet
+              | Lorem ipsum dolor sit amet
             
             li.about__list__item
               span.about__list__item__arrow
-              p.about__list__item__description Lorem ipsum dolor sit amet consectetur elt
+              | Lorem ipsum dolor sit amet consectetur elt
 
         .about__right
           .about__video
@@ -97,8 +97,8 @@ html(lang='pt-BR')
 
     section#plans.plans
       .container
-        h2.plans__title Pricing Plans
-        p.plans__description Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.
+        h2.plans__title.section__title Pricing Plans
+        p.plans__description.section__description Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea.
 
         ul.plans__list
           li.plans__list__item
@@ -110,7 +110,7 @@ html(lang='pt-BR')
             p.plans__list__item__feature Feature 4
             p.plans__list__item__feature Feature 5
             span.plans__list__item__purchase
-              a.plans__list__item__purchase__button Purchase
+              a.plans__list__item__purchase__button(href='#') Purchase
           li.plans__list__item
             h3.plans__list__item__title Standard
             p.plans__list__item__price $39#[span 99]
@@ -120,7 +120,7 @@ html(lang='pt-BR')
             p.plans__list__item__feature Feature 4
             p.plans__list__item__feature Feature 5
             span.plans__list__item__purchase
-              a.plans__list__item__purchase__button Purchase
+              a.plans__list__item__purchase__button(href='#') Purchase
           li.plans__list__item
             h3.plans__list__item__title Delux
             p.plans__list__item__price $59#[span 99]
@@ -131,7 +131,7 @@ html(lang='pt-BR')
             p.plans__list__item__feature Feature 5
             p.plans__list__item__feature Feature 6
             span.plans__list__item__purchase
-              a.plans__list__item__purchase__button Purchase
+              a.plans__list__item__purchase__button(href='#') Purchase
           li.plans__list__item
             h3.plans__list__item__title Unlimeted
             p.plans__list__item__price $79#[span 99]
@@ -141,13 +141,13 @@ html(lang='pt-BR')
             p.plans__list__item__feature Feature 4
             p.plans__list__item__feature Feature 5
             span.plans__list__item__purchase
-              a.plans__list__item__purchase__button Purchase
+              a.plans__list__item__purchase__button(href='#') Purchase
     
     footer#footer.footer
       .footer__contact
         .container
-          .footer__contact__title Say Hi & Get in Touch
-          .footer__contact__description Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse. 
+          h2.footer__contact__title.section__title Say Hi & Get in Touch
+          p.footer__contact__description.section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse. 
           nav.footer__contact__social
             a.footer__contact__social__link(href='#')
               img(src='./images/twitter-icon.svg')
