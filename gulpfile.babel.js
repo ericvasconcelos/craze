@@ -5,6 +5,7 @@ import concat from 'gulp-concat';
 import sass from 'gulp-sass';
 import browserSync from 'browser-sync';
 import browserify from 'browserify';
+import uglify from "gulp-uglify";
 import babelify from 'babelify';
 import buffer from 'vinyl-buffer';
 import plugins from 'gulp-load-plugins';
@@ -80,6 +81,7 @@ gulp.task('mainjs', () => {
   })
   .pipe(source('main.min.js'))
   .pipe(buffer())
+  .pipe(uglify())
   .pipe(plugins().sourcemaps.init({'loadMaps': true}))
   .pipe(plugins().sourcemaps.write('.'))
   .pipe(gulp.dest(`${dirs.dist}/scripts`))

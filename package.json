@@ -31,6 +31,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgo": "^1.4.0",
+    "gulp-uglify": "^3.0.0",
     "install": "^0.5.7",
     "npm": "^3.10.10",
     "vinyl-buffer": "^1.0.1",
