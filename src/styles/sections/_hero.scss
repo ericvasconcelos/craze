@@ -82,7 +82,7 @@
     opacity: 1;
   }
 
-  img {
+  svg {
     display: block;
     width: 100%;
     height: auto;
@@ -119,6 +119,6 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    max-width: none;
+    max-width: rem(450);
   }
 }

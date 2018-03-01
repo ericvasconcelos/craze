@@ -12,13 +12,16 @@ import source from 'vinyl-source-stream';
 import imagemin from 'gulp-imagemin';
 import minifyCss from 'gulp-minify-css';
 import minifyHTML from 'gulp-minify-html';
+import inlineImages from 'gulp-inline-images';
+import svgo from 'gulp-svgo';
+import injectSvg from 'gulp-inject-svg';
 
 const dirs = {
   src: './src',
   dist: './dist'
 }
 
-gulp.task('w', ['sass', 'html', 'scripts', 'imagemin'], () => {
+gulp.task('w', ['sass', 'html', 'scripts'], () => {
   browserSync.init({
     server: `${dirs.dist}`
   });
@@ -27,12 +30,16 @@ gulp.task('w', ['sass', 'html', 'scripts', 'imagemin'], () => {
   gulp.watch(`${dirs.src}/styles/**/*.scss`, ['sass']).on('change', browserSync.reload);
   gulp.watch(`${dirs.src}/scripts/**/*.js`, ['scripts']);
   gulp.watch(`${dirs.dist}/scripts/bundle.js`).on('change', browserSync.reload);
-  gulp.watch(`${dirs.src}/images/**/*.[png,jpg]`, ['imagemin']).on('change', browserSync.reload);
 });
 
 gulp.task('html', () =>
   gulp.src(`${dirs.src}/*.pug`)
     .pipe(pug())
+    .pipe(inlineImages({
+      basedir: `${dirs.src}`
+    }))
+    .pipe(svgo())
+    .pipe(injectSvg({base: `${dirs.src}`}))
     .pipe(minifyHTML({ conditionals: true }))
     .pipe(gulp.dest(`${dirs.dist}`))
 );
@@ -83,16 +90,11 @@ gulp.task('bundlejs', () =>
     .pipe(gulp.dest(`${dirs.dist}/scripts`))
 );
 
-gulp.task('imagemin', () =>
-  gulp.src(`${dirs.src}/images/**/*`)
-    .pipe(imagemin())
-    .pipe(gulp.dest(`${dirs.dist}/images`))
-);
 
 gulp.task('font', () =>
   gulp.src(`${dirs.src}/font/**/*`)
     .pipe(gulp.dest(`${dirs.dist}/font`))
 );
 
-gulp.task('default', ['w', 'html', 'imagemin', 'font']);
+gulp.task('default', ['w', 'html', 'font']);
 
