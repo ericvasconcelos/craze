@@ -92,7 +92,7 @@ gulp.task('bundlejs', () =>
 );
 
 gulp.task('imagemin', () =>
-  gulp.src(`${dirs.src}/images/**/*`)
+  gulp.src([`${dirs.src}/images/**/*`,`!${dirs.src}/images/inline/*`])
     .pipe(imagemin())
     .pipe(gulp.dest(`${dirs.dist}/images`))
 );

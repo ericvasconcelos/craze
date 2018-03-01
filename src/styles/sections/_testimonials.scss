@@ -5,7 +5,9 @@
 
 .carousel {
   width: 80%;
-  margin: 0 auto; 
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .carousel__wrap {
@@ -71,38 +73,6 @@
     }
   }
 }
-
-
-
-// slider
-.slider-pagination {
-  bottom: 6.25%;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-.slider-pagination > * {
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
-  display: inline-block;
-  height: 6px;
-  margin-left: 4px;
-  margin-right: 4px;
-  transition: background-color 250ms;
-  width: 6px;
-}
-.slider-pagination > *.is-active {
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-.has-slider {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
 
 
 
