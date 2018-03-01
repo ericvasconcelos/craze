@@ -41,7 +41,7 @@ html(lang='pt-BR')
               img(src='/images/windows-icon.svg')
 
         .hero__right
-          img.hero__hand(src='/images/hand.png', inline)
+          img.hero__hand(src='./images/hand.png')
     
     section#features.features
       .container
@@ -101,16 +101,25 @@ html(lang='pt-BR')
 
     section#testimonials.testimonials
       .container
-        .carousel
+        .has-slider.carousel
           .carousel__wrap
+            .carousel__box
+              p.carousel__box__testimonial "Craze is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!"
+              p.carousel__box__author Sarah Hunt
+            
+            .carousel__box
+              p.carousel__box__testimonial "Craze is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!"
+              p.carousel__box__author Sarah Hunt
+
+            .carousel__box
+              p.carousel__box__testimonial "Craze is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!"
+              p.carousel__box__author Sarah Hunt
+
             .carousel__box
               p.carousel__box__testimonial "Craze is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!"
               p.carousel__box__author Sarah Hunt
 
           nav.carousel__bullets
-            a.carousel__bullets__item.active(href='#')
-            a.carousel__bullets__item(href='#')
-            a.carousel__bullets__item(href='#')
 
     section#plans.plans
       .container

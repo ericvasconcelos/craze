@@ -9,11 +9,23 @@
 }
 
 .carousel__wrap {
-  margin: 0 auto rem(50); 
+  display: flex;
+  margin: 0 auto rem(50);
+
+  &.is-animating {
+    transition: transform 400ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
 }
 
 .carousel__box {
+  width: 100%;
   text-align: center;
+  transition: ease all 0.3s;
+  opacity: 0;
+
+  &:not(:first-child) {
+    display: none;
+  }
 }
 
 .carousel__box__testimonial {
@@ -44,17 +56,54 @@
 .carousel__bullets {
   display: block;
   text-align: center;
-}
 
-.carousel__bullets__item {
-  display: inline-block;
-  border-radius: 50%;
-  margin: 0 rem(3);
-  width: rem(16);
-  height: rem(16);
-  border: rem(2) solid $blue;
+  a {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 rem(3);
+    width: rem(16);
+    height: rem(16);
+    border: rem(2) solid $blue;
+    cursor: pointer;
 
-  &.active {
-    background-color: $blue;
+    &.active {
+      background-color: $blue;
+    }
   }
 }
+
+
+
+// slider
+.slider-pagination {
+  bottom: 6.25%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.slider-pagination > * {
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.75);
+  display: inline-block;
+  height: 6px;
+  margin-left: 4px;
+  margin-right: 4px;
+  transition: background-color 250ms;
+  width: 6px;
+}
+.slider-pagination > *.is-active {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.has-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+
+
+
+
