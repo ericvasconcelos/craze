@@ -1,7 +1,7 @@
 # Craze
 
 Single page of Craze, a great new free theme to showcase your new app.
-This application was created using by Pug, SASS, ECMAScript 6 and BrowserSync.
+This application was created using Pug, SASS, ECMAScript 6 and BrowserSync.
 
 Everything was automated with Gulp, so all code is minified and compressed.
 Images can be injected inline, decreasing unnecessary requests.
