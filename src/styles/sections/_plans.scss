@@ -1,0 +1,150 @@
+.plans {
+  width: 100%;
+  padding: rem(55) 0 0;
+  background-color: $light-gray;
+}
+
+.plans__title {
+  text-align: center;
+}
+
+.plans__description {
+  margin: 0;
+  text-align: center;
+}
+
+.plans__list {
+  display: block;
+  position: relative;
+  bottom: rem(-60);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.plans__list__item {
+  width: 100%;
+  max-width: rem(350);
+  display: block;
+  clear: both;
+  margin: 0 auto rem(30);
+  vertical-align: middle;
+  background-color: $white;
+  text-align: center;
+
+  @media #{$media__m} {
+    display: inline-block;
+    clear: none;
+    width: 24.6%;
+    margin: 0 0.2%;
+  }
+}
+
+.plans__list__item__title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: rem(17) 0;
+  background-color: $blue;
+  font-family: $font-subtitle;
+  color: $white;
+  font-size: rem(26);
+  font-weight: 400;
+
+  @media #{$media__m} {
+    font-size: rem(18);
+  }
+
+  @media #{$media__l} {
+    font-size: rem(26);
+  }
+}
+
+.plans__list__item__price {
+  display: block;
+  margin: 0;
+  padding: rem(15) 0;
+  font-family: $font-price;
+  color: $black;
+  font-size: rem(62);
+  -webkit-font-smoothing: antialiased;
+
+  span {
+    position: relative;
+    display: inline-block;
+    font-size: rem(31);
+    top: rem(-16);
+
+    @media #{$media__m} {
+      top: rem(-12);
+      font-size: rem(24);
+    }
+
+    @media #{$media__l} {
+      top: rem(-16);
+      font-size: rem(31);
+    }
+  }
+
+  @media #{$media__m} {
+    font-size: rem(46);
+  }
+
+  @media #{$media__l} {
+    font-size: rem(62);
+  }
+}
+
+.plans__list__item__feature {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: rem(15) 0;
+  border-top: rem(1) solid $light-gray;
+  font-family: $font-medium;
+  color: $gray;
+  font-size: rem(16);
+  -webkit-font-smoothing: antialiased;
+
+  @media #{$media__m} {
+    font-size: rem(14);
+  }
+
+  @media #{$media__l} {
+    font-size: rem(16);
+  }
+}
+
+.plans__list__item__purchase {
+  display: block;
+  width: 100%;
+  padding: rem(20) 0;
+  background-color: $blue;
+}
+
+.plans__list__item__purchase__button {
+  display: inline-block;
+  padding: rem(15) rem(35);
+  background-color: $dark-blue;
+  font-family: $font-subtitle;
+  font-weight: bold;
+  font-size: rem(15);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  @include transition(0.5s all ease-in-out);
+
+  &:hover {
+    background-color: rgba($dark-blue, 0.5);
+  }
+
+  @media #{$media__m} {
+    padding: rem(13) rem(20);
+    font-size: rem(12);
+  }
+
+  @media #{$media__l} {
+    padding: rem(15) rem(35);
+    font-size: rem(15);
+  }
+}

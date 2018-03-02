@@ -1,0 +1,55 @@
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
+object {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

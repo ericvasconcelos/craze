@@ -1,0 +1,59 @@
+@import './config/config';
+@import './sections/hero';
+@import './sections/features';
+@import './sections/about';
+@import './sections/testimonials';
+@import './sections/plans';
+@import './sections/footer';
+
+
+body {
+  font-family: $font-regular;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+  margin-left: rem(20);
+  margin-right: rem(20);
+  @include clearfix;
+
+	@media #{$media__m} {
+		width: $grid__size__m;
+		margin-left: auto;
+  	margin-right: auto;
+	}
+
+	@media #{$media__l} {
+		width: $grid__size__l;
+	}
+
+	@media #{$media__xl} {
+		width: $grid__size__xl;
+	}
+}
+
+.section__title {
+  margin-top: 0;
+  color: $black;
+  font-family: $font-subtitle;
+  font-size: rem(24);
+
+  @media #{$media__l} {
+    font-size: rem(30);
+  }
+}
+
+.section__description {
+  color: $gray;
+  font-family: $font-medium;
+  font-weight: 100;
+  font-size: rem(14);
+  line-height: 1.6;
+  letter-spacing: rem(0.3);
+  -webkit-font-smoothing: antialiased;
+
+  @media #{$media__l} {
+    font-size: rem(16);
+  }
+}
